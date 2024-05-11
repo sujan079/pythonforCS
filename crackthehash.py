@@ -6,8 +6,8 @@ with open('password.txt','r') as f:
 with open ('hashed.txt','r') as file:
     hashes=file.read().splitlines()
     for text in hashes:
-        username = text.split(":")[0]
-        hash =text.split(":")[1]
+        username = text.split(":")[0] #takes the line infront of :
+        hash =text.split(":")[1] # takes the lines right side of the :
         usernamehash[username]=hash
 
 for password in passwords:
