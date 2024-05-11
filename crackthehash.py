@@ -15,5 +15,3 @@ for password in passwords:
     for username, hash in usernamehash.items():
         if hash==passhash.hexdigest():
             print(f"MAtch found\n{username}:{password}")
-
-
